@@ -15,10 +15,12 @@ Panduan ini menyediakan dua metode untuk menyiapkan lingkungan kerja (*developme
    ```
 
 2. **Konfigurasi API Key:**
-   Buka file `.env` yang baru dibuat dan isi dengan API Key Anda untuk Google Gemini:
+   Buka file `.env` yang baru dibuat dan isi dengan API Key Anda untuk Google Gemini dan Tavily Search:
    ```env
    GOOGLE_API_KEY = 'isi_api_key_gemini_anda_di_sini'
+   TAVILY_API_KEY = 'isi_api_key_tavily_anda_di_sini'
    ```
+
 
 ---
 
@@ -28,7 +30,7 @@ Repositori ini terdiri dari 5 materi pembelajaran utama berupa Jupyter Notebook:
 
 1. **[1_aplikasi_sederhana.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/1_aplikasi_sederhana.ipynb)** — Membangun aplikasi chat sederhana dengan model Gemini menggunakan LangChain. Mempelajari inisialisasi model, pemanggilan model (`invoke`), membaca metadata respons, konfigurasi parameter model (`temperature`, `max_tokens`), serta menyusun pesan menggunakan `SystemMessage` & `HumanMessage`.
 2. **[2_prompting.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/2_prompting.ipynb)** — Teknik rekayasa prompt (*prompt engineering*). Mempelajari manual prompt, penggunaan `PromptTemplate`, `ChatPromptTemplate` (Structured Prompt), dan memaksa output model agar konsisten menggunakan Pydantic (`Structured Output`).
-3. **[3_tool.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/3_tool.ipynb)** — Menambahkan kapabilitas eksternal ke dalam model. Mempelajari cara menggunakan pre-built tools (seperti pencarian Wikipedia) dengan agen LangChain (`create_agent`).
+3. **[3_tool.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/3_tool.ipynb)** — Menambahkan kapabilitas eksternal ke dalam model. Mempelajari cara menggunakan pre-built tools (seperti pencarian internet menggunakan Tavily Search) dengan agen LangChain (`create_agent`).
 4. **[4_custom_tool.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/4_custom_tool.ipynb)** — Membuat tool kustom buatan sendiri menggunakan decorator `@tool` agar agen dapat memanggil fungsi Python spesifik Anda.
 5. **[5_memory.ipynb](file:///home/murphi/Projects/langchain-pusdiklat/5_memory.ipynb)** — Menyimpan riwayat percakapan agar model memiliki ingatan (stateful). Mempelajari cara menggunakan `InMemorySaver` dari LangGraph dan parameter `thread_id`.
 
