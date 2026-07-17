@@ -14,3 +14,7 @@ wheels/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Vector stores
+vector/
+vector_multi/
